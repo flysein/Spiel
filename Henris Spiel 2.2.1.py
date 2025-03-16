@@ -4,6 +4,15 @@ import random
 def generate_random_choice():
     return random.randint(1, 2)
 
+def zufallsfunktion():
+    zahl = random.randint(1, 10)
+    if zahl in range(1, 5):
+        a()
+    elif zahl in range(5, 9):
+        b()
+    elif zahl in range(9, 11):
+        c()
+        
 def handle_grazius_encounter():
     print("Hinter der Tür wartet Herr Grazius und starrt dich an. In welches Auge schaust du? (rechts/links)")
     auge = input("> ").strip().lower()
