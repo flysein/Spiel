@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henris Spiel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        #game-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        #story-text {
+            margin-bottom: 20px;
+            min-height: 100px;
+        }
+        
+        #input-container {
+            margin-bottom: 20px;
+        }
+        
+        #user-input {
+            padding: 5px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #restart-button {
+            display: none;
+            background-color: #f44336;
+        }
+        
+        #restart-button:hover {
+            background-color: #da190b;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="story-text"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Deine Antwort">
+            <button id="submit-button">Bestätigen</button>
+        </div>
+        <button id="restart-button">Spiel neu starten</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
